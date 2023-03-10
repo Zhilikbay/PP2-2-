@@ -1,0 +1,5 @@
+This is the file B.txt.
+apple
+banana
+cherry
+date
