@@ -4,7 +4,7 @@ def f(text):
         if re.search(patterns,  text):
                 return 'Found'
         else:
-                return('Not Found')
+                return('Not found')
 
 a=input()
 print(f(a))
