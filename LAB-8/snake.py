@@ -30,8 +30,8 @@ def close_game():
 while True:
     surface.blit(img, (0, 0))
     # рисовка змея 
-    [pygame.draw.rect(surface, pygame.Color('green'), (i, j, SIZE - 1, SIZE - 1)) for i, j in snake]
-    pygame.draw.rect(surface, pygame.Color('red'), (*apple, SIZE, SIZE))
+    [pygame.draw.rect(surface, pygame.Color('red'), (i, j, SIZE - 1, SIZE - 1)) for i, j in snake]
+    pygame.draw.rect(surface, pygame.Color('green'), (*apple, SIZE, SIZE))
     # баллы 
     render_score = font_score.render(f'SCORE: {score}', 1, pygame.Color('orange'))
     surface.blit(render_score, (5, 5))
