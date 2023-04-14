@@ -27,10 +27,10 @@ pygame.mixer.init()
 pygame.mixer.music.load(music_playlist[current_song])
 
 key_mapping = {
-    pygame.K_p: "play_pause",
-    pygame.K_s: "stop",
-    pygame.K_n: "next",
-    pygame.K_b: "previous"
+    pygame.K_UP: "play_pause",
+    pygame.K_DOWN: "stop",
+    pygame.K_RIGHT: "next",
+    pygame.K_LEFT: "previous"
 }
 
 while True:
@@ -77,7 +77,7 @@ while True:
     screen.blit(play_pause_text, (10, 40))
 
 
-    instructions_text = font.render("Press 'P' to Play/Pause, 'S' to Stop, 'N' for Next, 'B' for Previous", True, BLACK)
+    instructions_text = font.render("Press 'Up' to Play/Pause, 'Down' to Stop, 'Right' for Next, 'Left' for Previous", True, BLACK)
     screen.blit(instructions_text, (10, 70))
 
     
